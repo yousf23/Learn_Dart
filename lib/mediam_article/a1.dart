@@ -20,5 +20,6 @@ void main() {
     MathQuestion(question: '5+80000', answer: 9.7),
   ];
 
-  getAnwer(questions[0].question);
+  var useranwer = getAnwer(questions[1].question);
+  print(useranwer);
 }
