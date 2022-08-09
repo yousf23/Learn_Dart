@@ -7,9 +7,15 @@ class ListClass {
   ListClass({required this.question, required this.answer});
 }
 
+<<<<<<< HEAD
 double fun(String msg) {
   var ff = double.parse(stdin.readLineSync()!);
   print(msg);
+=======
+fun(String question) {
+  var ff = stdin.readLineSync();
+  print(ff);
+>>>>>>> origin/master
   return ff;
 }
 
