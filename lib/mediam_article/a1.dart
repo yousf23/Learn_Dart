@@ -7,7 +7,7 @@ class MathQuestion {
   MathQuestion({required this.question, required this.answer});
 }
 
-double getAnwer(String msg) {
+double getAnwer(dynamic msg) {
   print(msg);
   var answer = double.parse(stdin.readLineSync()!);
   return answer;
@@ -20,6 +20,5 @@ void main() {
     MathQuestion(question: '5+80000', answer: 9.7),
   ];
 
-  var useranwer = getAnwer(questions[1].question);
-  print(useranwer);
+  getAnwer(questions[0].answer);
 }
